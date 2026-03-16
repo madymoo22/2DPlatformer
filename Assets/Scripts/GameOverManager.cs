@@ -8,8 +8,7 @@ public class GameOverManager : MonoBehaviour
 
     void Start()
     {
-        int finalScore = PlayerPrefs.GetInt("FinalScore", 0);
-        finalScoreText.text = "Final Score: " + finalScore;
+        finalScoreText.text = "Final Score: " + GameManager.Instance.currentScore;
     }
 
     public void TryAgain()
